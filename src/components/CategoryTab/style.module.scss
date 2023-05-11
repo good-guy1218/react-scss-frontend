@@ -1,0 +1,31 @@
+@import 'variables.scss';
+.category {
+    overflow: auto;
+    .category--list {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        overflow: auto;
+        width: 100%;
+        display: flex;
+        li {
+            padding: 8px 16px;
+            float: left;
+            a {
+                text-decoration: none;
+                color: $font-dark;
+                white-space: nowrap;
+                font-weight: bold;
+            }
+            &:hover {
+                background-color: $light-gray;
+            }
+            &.active {
+                a {
+                    color: $primary-color;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

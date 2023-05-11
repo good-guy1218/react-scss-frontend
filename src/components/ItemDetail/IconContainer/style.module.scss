@@ -1,0 +1,11 @@
+@import 'variables.scss';
+.container {
+    display: flex;
+    align-items: center;
+    div {
+        color: $font-light;
+        padding: 8px 12px;
+        border-radius: 20px;
+        background-color: $light-gray;
+    }
+}

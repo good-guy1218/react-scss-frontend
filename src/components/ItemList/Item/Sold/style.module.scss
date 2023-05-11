@@ -1,0 +1,23 @@
+@import 'variables.scss';
+.sold::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    border-top: 80px solid $primary-color;
+    border-right: 80px solid transparent;
+}
+
+.sold::after {
+    content: 'SOLD';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-weight: 500;
+    transform-origin: 90% 70%;
+    transform: rotate(-45deg);
+    font-size: 1.1em;
+}

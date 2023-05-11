@@ -1,0 +1,32 @@
+@import 'variables.scss';
+.search-bar {
+    display: flex;
+    gap: 10px;
+    &>:first-child {
+        font-size: 1.5em;
+        color: $font-gray;
+    }
+    &>input {
+        border: none;
+        background-color: $gray;
+        border-radius: 5px;
+        padding: 8px;
+        &:focus {
+            outline: none;
+        }
+        width: 100%;
+    }
+    @media screen and (max-width: $sm-width) {
+        font-size: 1em;
+        width: 60%;
+    }
+    @media screen and (min-width: $md-width) {
+        width: 50%;
+    }
+    @media screen and (min-width: $lg-width) {
+        width: 40%;
+    }
+    @media screen and (min-width: $xl-width) {
+        width: 30%;
+    }
+}

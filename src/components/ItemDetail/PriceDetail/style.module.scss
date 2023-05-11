@@ -1,0 +1,30 @@
+@import 'variables.scss';
+.price-detail {
+    position: fixed;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    background-color: #3C221C;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    .price-detail--info {
+        font-size: 2em;
+        display: flex;
+        align-items: end;
+        small {
+            font-size: 0.5em;
+        }
+    }
+    .price-detail--purchase-btn {
+        padding: 16px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        background-color: #D22C35;
+        color: #fff;
+    }
+}

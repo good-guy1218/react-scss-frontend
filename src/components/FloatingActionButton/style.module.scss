@@ -1,0 +1,25 @@
+@import 'variables.scss';
+.float-button {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: $primary-color;
+    color: #fff;
+    transform: translate(10%, 10%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50% 50% 0 50%;
+    label {
+        font-size: 16px;
+    }
+    transition: padding 0.5s;
+    &:hover {
+        padding: 30px;
+    }
+}

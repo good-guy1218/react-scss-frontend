@@ -1,0 +1,13 @@
+@import 'variables.scss';
+.name-bar {
+    display: flex;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: $font-dark;
+    word-break: keep-all;
+    a {
+        color: $font-light;
+    }
+    height: calc(1em + 8px);
+    overflow-y: hidden;
+}
